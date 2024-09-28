@@ -7,10 +7,10 @@ from tkinter import filedialog, ttk, simpledialog
 class FolderRenamerApp:
     def __init__(self, master):
         self.master = master
-        self.master.title("Folder Renamer")
+        self.master.title("FolderTidy")
 
         # Allow the window to be resized
-        self.master.geometry("600x500")
+        self.master.geometry("600x600")
         self.master.resizable(True, True)
 
         self.directory_path = tk.StringVar()
