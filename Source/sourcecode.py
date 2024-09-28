@@ -21,16 +21,16 @@ class FolderRenamerApp:
         self.directory_path.set(os.getcwd())
 
         self.build_interface()
-        self.center_dialog()
+        self.centre_dialog()
 
-    def center_dialog(self):
-        ''' Center the dialog on the screen '''
+    def centre_dialog(self):
+        # centre dialog on screen
         window_width = 600  # Fixed width
         window_height = 500  # Fixed height
         screen_width = self.master.winfo_screenwidth()
         screen_height = self.master.winfo_screenheight()
 
-        # Calculate x and y coordinates for the center
+        # Calculate x and y coordinates for the centre
         x = (screen_width // 2) - (window_width // 2)
         y = (screen_height // 2) - (window_height // 2)
 
@@ -41,7 +41,7 @@ class FolderRenamerApp:
         self.master.bind("<Configure>", self.update_watermark_position)
 
     def build_interface(self):
-        ''' Set up the GUI components '''
+        # Set up the GUI components  
         # Create a canvas for the gradient background
         self.canvas = tk.Canvas(self.master, width=600, height=500)
         self.canvas.pack(fill="both", expand=True)
@@ -84,7 +84,7 @@ class FolderRenamerApp:
 
         # Watermark
         self.watermark = tk.Label(self.frame, text="Made by Grid!", bg='#2c2f33', fg='Green', font= ('Comic Sans MS', 12, 'bold'))
-        self.watermark.place(relx=0.5, rely=0.95, anchor='center')
+        self.watermark.place(relx=0.5, rely=0.95, anchor='')
 
     def background_gradient(self):
         ''' Create a vertical gradient for the window background '''
