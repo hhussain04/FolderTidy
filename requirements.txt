@@ -1,5 +1,4 @@
-# requirements.txt for yfinance_stocks
-yfinance>=0.1.70
-pandas>=1.0.0
-plotly>=5.0.0
+# requirements.txt for FolderTidy
+# No external libraries needed, as this uses built-in modules.
+# However, tkinter is commonly included in many distributions.
 tkinter
