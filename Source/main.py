@@ -83,7 +83,7 @@ class FolderRenamerApp:
         self.progress_text.configure(yscrollcommand=scrollbar.set)
 
         # Watermark
-        self.watermark = tk.Label(self.frame, text="Made by Grid!", bg='#2c2f33', fg='Green', font= ('Comic Sans MS', 12, 'bold'))
+        self.watermark = tk.Label(self.frame, text="Made by hhussain04!", bg='#2c2f33', fg='Green', font= ('Comic Sans MS', 12, 'bold'))
         self.watermark.place(relx=0.5, rely=0.95, anchor='center')
 
     def background_gradient(self):
